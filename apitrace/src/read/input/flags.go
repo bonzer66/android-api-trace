@@ -18,7 +18,7 @@ func check(err) {
 }
 */
 type Input struct{
-	ReadFile string	
+	ParseFile string	
 	OutputToJSON string
 
 
@@ -26,11 +26,11 @@ type Input struct{
 
 func ReadArgs() Input {
     helpCommand := flag.NewFlagSet("help",flag.ExitOnError)
-    ReadFileCommand := flag.NewFlagSet("file",flag.ExitOnError)
+    ParseFileCommand := flag.NewFlagSet("file",flag.ExitOnError)
     OutputCommand := flag.NewFlagSet("out",flag.ExitOnError)
 
     /* Sub commands*/
-    ReadFilePtr := ReadFileCommand.String("f", "", "file to read")
+    ParseFilePtr := ReadFileCommand.String("f", "", "file to read")
     OutputToJSONPtr := OutputCommand.String("o", "", "JSON output path")
    
     if len(os.Args) < 2 {
@@ -46,7 +46,7 @@ func ReadArgs() Input {
 		    log.Fatal(err)
 	    }
     case "file":
-	    err := ReadFileCommand.Parse(os.Args[2:])
+	    err := ParseFileCommand.Parse(os.Args[2:])
 	    if err != nil {
                     log.Fatal(err)
             }
@@ -56,9 +56,9 @@ func ReadArgs() Input {
 
     }
     
-    if ReadFileCommand.Parsed() {
-	if *ReadFilePtr != "" {
-		*ReadFilePtr = output.ReadFile() // build ReadFile() in /output/read.go
+    if ParseFileCommand.Parsed() {
+	if *ParseFilePtr != "" {
+		*ParseFilePtr = output.ParseFile() // build ParseFile() in /output/read.go
 	}
     }
 
