@@ -19,7 +19,8 @@ func CreateOutputFile(path string) string {
 // add export to json format 
 func Append(name string, format ,outputFile string) {
 	switch {
-	case format == "json"(name, outputFile)
+		case format == "json": 
+		
        }
 }
 
