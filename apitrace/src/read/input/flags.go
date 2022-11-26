@@ -53,7 +53,7 @@ func ReadArgs() Input {
     }
 
 
-       if OutputToJSONPtr.Parsed() {
+       if OutputCommand.Parsed() {
 	       if *OutputToJSONPtr != "" {       //build AppplyExtension in /output/file.go
 		       *OutputToJSONPtr = output.ApplyExtension(*OutputToJSONPtr, "json")  
 	       }
