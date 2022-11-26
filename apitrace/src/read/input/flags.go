@@ -30,7 +30,7 @@ func ReadArgs() Input {
     OutputCommand := flag.NewFlagSet("out",flag.ExitOnError)
 
     /* Sub commands*/
-    ParseFilePtr := ReadFileCommand.String("f", "", "file to read")
+    ParseFilePtr := ParseFileCommand.String("f", "", "file to read")
     OutputToJSONPtr := OutputCommand.String("o", "", "JSON output path")
    
     if len(os.Args) < 2 {
