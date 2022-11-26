@@ -2,7 +2,7 @@ package input
 
 import (
     "os"
-    "flag"
+    "flag" //https://pkg.go.dev/flag
     "log"
     "read/output"
 
