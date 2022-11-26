@@ -1,3 +1,7 @@
+/*GOALS*/
+// read a file from args
+// export to json,txt format from args
+
 package main
 
 import (
