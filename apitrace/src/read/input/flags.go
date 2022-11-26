@@ -7,6 +7,16 @@ import (
     "read/output"
 
 )
+
+/*
+// could probably call this instead of running a cmp on each case
+func check(err) {
+	if err != nil {
+		log.Fatal(err)
+	}
+	 
+}
+*/
 type Input struct{
 	ReadFile string	
 	OutputToJSON string
