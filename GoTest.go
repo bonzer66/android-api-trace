@@ -21,7 +21,6 @@ func main() {
         panic(err)
     }
     // data is the file content, you can use it
-    fmt.Println("File content is:")
     fmt.Println(string(data))
  }
 
