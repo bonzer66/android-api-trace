@@ -21,7 +21,7 @@ func main() {
         fmt.Println("Missing parameter, provide file name!")
         return
     }            //os.ReadFile function --> ReadFile(name string) ([]byte, error)
-    data, err := os.ReadFile(os.Args[1]) //os.Args[2] <<-- for sub commands
+    data, err := os.ReadFile(os.Args[1]) //os.Args[2] 
     if err != nil {
         fmt.Println("Can't read file:", os.Args[1])
         panic(err)
