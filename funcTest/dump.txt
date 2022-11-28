@@ -1,3 +1,4 @@
+//Gotest.go
 // go assembler uses a bunch of pseudo registers for some awful reason 
 
 main_main_pc0:
