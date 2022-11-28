@@ -8,6 +8,7 @@ import (
 )
 //func ReadFile(filename string) ([]byte, error)
 
+// takes a file as input
 func main() {
 
         if len(os.Args) < 2 {
