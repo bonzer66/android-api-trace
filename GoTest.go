@@ -23,7 +23,6 @@ func main() {
         fmt.Println("Can't read file:", os.Args[1])
         panic(err)
     }
-    // data is the file content, you can use it
     fmt.Println(string(data))
  }
 
