@@ -1,21 +1,18 @@
 // testing functions before adding to main package
-
-
 package main
 
 /* get flags to work 
 type Input struct {
       
-
-}
-*/
+      }
+      
+      */
 import (
         //"flag"
         "fmt"
         "os"
         "io/ioutil"
 )
-
 
 // takes a file as input
 func main() {
