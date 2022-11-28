@@ -3,6 +3,12 @@
 
 package main
 
+/* get flags to work 
+type Input struct {
+      
+
+}
+*/
 import (
         //"flag"
         "fmt"
