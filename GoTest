@@ -20,7 +20,7 @@ wordPtr := flag.String("file", "", "a string")
 
 //take file as input 
 func ParseFile(filename) {
-        *r,err  := os.ReadFile(*r)
+        *r,err  := os.ReadFile()
         fmt.Print(string(dat))
 }
 
