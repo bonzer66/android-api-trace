@@ -9,7 +9,7 @@ import (
         "os"
         "io/ioutil"
 )
-//func ReadFile(filename string) ([]byte, error)
+
 
 // takes a file as input
 func main() {
