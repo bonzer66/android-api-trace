@@ -1,3 +1,6 @@
+// testing functions before adding to main package
+
+
 package main
 
 import (
