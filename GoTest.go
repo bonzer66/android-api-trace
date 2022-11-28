@@ -33,8 +33,10 @@ func main() {
  }
 
 
+
+
 /*
-func OutputFile(outfile) {
+func OutputFile() {
         *out,d1 := []byte(out,d1)
         err := os.WriteFile()
  }
